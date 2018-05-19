@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+jQuery(document).ready(function() {
+        
+	jQuery('.carousel[data-type="multi"] .item').each(function(){
+		var next = jQuery(this).next();
+		if (!next.length) {
+			next = jQuery(this).siblings(':first');
+		}
+		next.children(':first-child').clone().appendTo(jQuery(this));
+	  
+		for (var i=0;i<2;i++) {
+			next=next.next();
+			if (!next.length) {
+				next = jQuery(this).siblings(':first');
+			}
+			next.children(':first-child').clone().appendTo($(this));
+		}
+	});
+        
+});
+</script>
+  <style>
+ #bbb:focus
+{
+    font-size: 18px;
+   
+}
+ #tech {
+  
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.65);
+  padding: 35px 1160px 115px 165px;
+  color: white;
+  margin: 0;
+  font-size: 18px;
+}
+#cen
+{
+ margin-top:18px;
+}
+#p123
+{
+text-align:center;
+}
+#para1
+{
+text-align:center; font-size:17px; margin-top:20px;
+}
+#dev{
+ height:350px;margin-top:20px;margin-bottom:20px;
+}
+#space{
+
+background-color:white;
+}
+#colr{
+background-color:white;
+}
+#check:hover{
+
+color:rgb(240,240,240);
+font-size:60px;
+}
+#check{
+font-size:60px;
+color:rgb(180,180,180);
+}
+.module {
+ 
+  margin: 0px;
+  width: 230px;
+  height: 250px;
+  float: left;
+  background-size: cover;
+  position: relative;
+  
+}
+.carousel-col { 
+    position: relative; 
+    min-height: 1px; 
+    padding: 5px; 
+    float: left;
+ }
+#bg
+{
+ background: rgba(0, 0, 0, 0.65);
+
+}
+#bbb{
+  font-family:Georgia;
+color:white;
+border:rgb(255, 146, 71);
+background-color:rgb(255, 146, 71);
+font-weight: bold;
+font-size:20px;
+font-normal:normal;
+font-height:20px;
+
+}
+#bbb:hover
+{
+outline-color:rgb(255, 146, 71);
+border-color:rgb(255,146,71);
+background-color: rgba(0, 0, 0, 0.25);
+color:rgb(255, 146, 71);
+}
+
+#seee{
+
+font-weight:20px;
+font-size:15px;
+color:white;
+border:rgb(255, 146, 71);
+background-color:rgb(255, 146, 71);
+
+}
+#bttn{
+width:260px;
+left-side:0px;
+font-weight:20px;
+font-size:15px;
+color:white;
+border:rgb(255, 146, 71);
+background-color:rgb(255, 146, 71);
+}
+#seee:hover,seee:active,seee:focus ,seee.outline.active{
+
+color:rgb(255, 146, 71);
+background-color:white;
+border:#285e8e;
+}
+.cp:hover{
+color:rgb(255, 146, 71);
+}
+#bttn:hover,seee:active,seee:focus ,seee.outline.active{
+
+color:rgb(255, 146, 71);
+background-color:rgb(60,60,60);
+
+border-color:(255, 146, 71);
+}
+.navbar .brand, .navbar .nav > li > a:hover {
+    color: #F56E6E;
+}
+#ff{
+color:white;
+margin-top:40px;
+font-family:Trebuchet MS;
+}
+#fix{
+ 
+}
+
+body
+{
+ background:fixed;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/shoes.jpg);
+}
+
+
+
+
+
+.carousel-control.left, .carousel-control.right {
+	background-image:none;
+}
+
+.img-responsive{
+	width:100%;
+	height:auto;
+}
+
+@media (min-width: 992px ) {
+	.carousel-inner .active.left {
+		left: -25%;
+	}
+	.carousel-inner .next {
+		left:  25%;
+	}
+	.carousel-inner .prev {
+		left: -25%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px ) {
+	.carousel-inner .active.left {
+		left: -33.3%;
+	}
+	.carousel-inner .next {
+		left:  33.3%;
+	}
+	.carousel-inner .prev {
+		left: -33.3%;
+	}
+	.active > div:first-child {
+		display:block;
+	}
+	.active > div:first-child + div {
+		display:block;
+	}
+	.active > div:last-child {
+		display:none;
+	}
+}
+#lp{
+color:rgb(180, 180, 180); font-size:16px; text-align:left-side ; font-family:Trebuchet MS;
+
+}
+@media (max-width: 767px) {
+	.carousel-inner .active.left {
+		left: -100%;
+	}
+	.carousel-inner .next {
+		left:  100%;
+	}
+	.carousel-inner .prev {
+		left: -100%;
+	}
+	.active > div {
+		display:none;
+	}
+	.active > div:first-child {
+		display:block;
+	}
+}
+
+#same:hover{
+font-size:24px;
+color:rgb(197,142,25);
+
+}
+
+#same{
+font-size:24px;
+color:white;
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" style="height:98px ;background-color:hsl(0, 0%, 100%);">
+<div class="container" style="background-color:white">
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-sm-5">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="text-align:center; margin-top: 20px;font-weight:lighter; font-stretch:-30%; font-size:25px;font-normal:20px ;font-weight-lighter">T  <span class="glyphicon glyphicon-tasks" style="font-size:25px;background: linear-gradient(to left, orange, white);color:white; border:red"></span>  C H V E R X</a>
+    </div>
+    </div>
+     <div class="col-sm-7">
+    <ul class="nav navbar-nav" id="cen">
+      <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" >Services</a>
+	
+	  </li>
+      <li><a href="#">Technologies</a></li>
+      <li><a href="#">Portfolio</a></li>
+       <li><a href="#">About</a></li>
+	    
+      <li><a href="#">Team</a></li>
+        <li><a href="#">Blog</a></li>
+		<li><a href="#"><button class="btn btn-default" id="seee"style="background-color:rgba(255, 146,71); width:120px;color:white">Contact Us</button></a></li>
+     
+    </ul>
+ 
+  </div>
+  </div>
+  
+  
+  </div>
+  
+</nav>
+
+
+<img src="c2.png"  width="100%"alt="Cinque Terre">
+<div class="row" id="space">
+<div class="col-sm-2">
+</div>
+<div class="col-sm-8">
+
+<p id="para1" >
+We offer premium quality software, web development and mobile app solutions. You can benefit from our expert development team that will match the technology with your requirement. We can deliver from idea inception phase to rescue projects and ongoing work, our applied Zen approach ensures maximum client satisfaction.
+  </p>
+  </div>
+  <div class="col-sm-2">
+  </div>
+  
+</div>
+<div class="row" id="colr">
+<div class="col-sm-3" id="dev">
+<img src="c2.png"  width="100%"alt="Cinque Terre">
+<h2 style="font-family:bold; text-align:center">Web Development</h2>
+<p style="text-align:center">
+We provide a one stop shop for all your web development needs. Our Rock star web developers are well 
+versed with agile development methods to ensure highest delivery standards. “We provide whatever you need!”</p>
+
+</div>
+<div class="col-sm-3" id="dev">
+<img src="c2.png"  width="100%"alt="Cinque Terre" style=" background-color:#ebedea">
+<h2 style="font-family:bold; text-align:center">Web Development</h2>
+<p style="text-align:center">
+We provide a one stop shop for all your web development needs. Our Rock star web developers are well 
+versed with agile development methods to ensure highest delivery standards. “We provide whatever you need!”</p>
+
+</div>
+<div class="col-sm-3" id="dev" >
+<img src="c2.png"  width="100%"alt="Cinque Terre">
+
+</div>
+
+<div class="col-sm-3" id="dev">
+<img src="c2.png"  width="100%"alt="Cinque Terre">
+
+</div>
+
+
+</div>
+<div class="row">
+<div class="col-sm-12" id="fix">
+<div class="module">
+<div class"over">
+  <h id="tech" >Our Technology Expertise Includes</h>
+ 
+
+
+
+
+  
+</div>
+</div>
+</div>
+</div>
+ <div class="row" style="  background: rgba(0, 0, 0, 0.65);
+  padding: 0px 116px 95px 105px;">
+  <div class="col-sm-1">
+  <!-- in your header -->
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+<!-- in your body -->
+<i class="devicon-rails-plain-wordmark" id="check"></i>
+</div>
+  <div class="col-sm-1">
+
+</div>
+  <div class="col-sm-1">
+  <!-- in your header -->
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+<!-- in your body -->
+<i class="devicon-android-plain colored" id="check"></i>
+</div>
+  <div class="col-sm-1">
+  <!-- in your header -->
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+<!-- in your body -->
+<i class="devicon-android-plain"></i>
+</div>
+ 
+  <div class="col-sm-1 ">
+<!-- in your header -->
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+<!-- in your body -->
+<i class="devicon-angularjs-plain colored" id="check"></i>
+</div>
+  <div class="col-sm-1">
+<!-- in your header -->
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+<!-- in your body -->
+<i class="devicon-express-original-wordmark" id="check"></i>
+</div>
+ 
+ <div class="col-sm-1">
+<!-- in your header -->
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+<!-- in your body -->
+<i class="devicon-apple-original colored" id="check"></i>
+</div>
+</div>
+
+<div class="row" id="bg">
+<div class="col-sm-5" id="bg">
+<span></span>
+</div>
+<div class="col-sm-2">
+<button class="btn btn-default btn-lg btn-block" id="bbb">Meet Our Teams</button>
+</div>
+<div class="col-sm-5">
+<span></span>
+</div>
+</div>
+
+
+<div class"row" style="height:40px" id="bg" >
+<div class="col-sm-12">
+
+</div>
+</div>
+
+
+<div class"row" style="background-color:white;height:325px">
+
+<div class="col-sm-12">
+	
+
+	
+	
+	
+	<h1 style="padding-left:550px; font-size:34px;font-weight:normal;font-family:Arial Black; margin:55px 0px 55px 0px">Feature Work</h1>
+<!--The main div for carousel-->
+<div class="container text-center ">
+<div class="carousel slide row" data-ride="carousel" data-type="multi" data-interval="3000" id="fruitscarousel">
+
+    <div class="carousel-inner">
+        <div class="item active">
+            <div class="col-md-3 col-sm-4 col-xs-12"><a href="#"><img src="F:\bootstrap\c1.jpg" class="img-thumbnail"></a></div>
+        </div>
+        <div class="item">
+            <div class="col-md-3 col-sm-4 col-xs-12"><a href="#"><img src="F:\bootstrap\c3.jpg" class="img-thumbnail"></a></div>
+        </div>
+        <div class="item">
+            <div class="col-md-3 col-sm-4 col-xs-12"><a href="#"><img src="F:\bootstrap\c6.jpg" class="img-thumbnail"></a></div>
+        </div>
+        <div class="item">
+            <div class="col-md-3 col-sm-4 col-xs-12"><a href="#"><img src="F:\bootstrap\c1.jpg" class="img-thumbnail"></a></div>
+        </div>
+        <div class="item">
+            <div class="col-md-3 col-sm-4 col-xs-12"><a href="#"><img src="F:\bootstrap\c3.jpg" class="img-thumbnail"></a></div>
+        </div>
+        <div class="item">
+            <div class="col-md-3 col-sm-4 col-xs-12"><a href="#"><img src="F:\bootstrap\c6.jpg" class="img-thumbnail"></a></div>
+        </div>
+    </div>
+
+    <a class="left carousel-control" href="#fruitscarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+    <a class="right carousel-control" href="#fruitscarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a> 
+
+</div>
+</div>
+ 
+						</div>
+						
+						
+				
+</div>
+
+
+<div class="row" style="background:white">
+<div class="col-sm-5">
+
+
+
+
+</div>
+<div class="col-sm-2">
+<span class="border border-info">
+<button class="btn btn-default" style="border-color:orange"id="seee"> SEE ALL
+</button>
+</span>
+
+
+</div>
+<div class="col-sm-5">
+<span></span>
+
+
+</div>
+</div>
+
+
+
+
+<div class="row" style="background:white">
+<div class="col-sm-4">
+
+
+
+
+</div>
+<div class="col-sm-5">
+
+<p style="font-size:26px; font-weight:bold; padding-bottom:30px;padding-left:20px;margin-top:50px">What Our Client Say About Us</p>
+
+
+
+</div>
+<div class="col-sm-3">
+<span></span>
+
+
+</div>
+</div>
+
+
+
+
+
+<div class="row" style="background-color:white">
+<div class="col-sm-2">
+</div>
+<div class="col-sm-8">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+ 
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="F:\bootstrap\u1.png" class="img-circle center-block" alt="Los Angeles" width="100" height="300">
+       <br>
+        <p id="p123"> A very positive experience. I am very impressed with your professionalism and willingness to help me in development of my
+		<br>product. Will definitely keep
+		using.<br><br>
+J. Kraft,<br>
+Founder & CEO, UltraVie <br></p>
+      </div>
+
+      <div class="item">
+        <img src="F:\bootstrap\u2.jpg" class="img-circle center-block" alt="Chicago"  width="100" height="300">
+		<br>
+		<p id="p123">The service TechVerx provides is top quality – from initial request for info and proposal to the execution of the activity and debrief.<br> They are active listeners understanding our unique requirements, able to improvise when requested. We had a memorable<br> team-building experience. The activity is fun, relevant and yes, on point!<br>
+R. Tiku,<br>
+Business Growth Analyst<br></p>
+      </div>
+    
+      <div class="item">
+        <img src="F:\bootstrap\u3.png" class="img-circle center-block" alt="New york"  width="120" height="340">
+		<br>
+		<p id="p123">
+		Excellent, professional, unique and enjoyable. The team worked hard to adjust to my requirements, and were open to changes<br> in tools and workflow to ensure integration with my team and product.<br>
+J. Narowski,<br>
+Founder, KarmaCRM
+		<br>
+		</p>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+   
+   
+  </div>
+
+</div>
+<div class="col-sm-2">
+</div>
+
+</div>
+
+
+
+<div class="row" style="background:white">
+<div class="col-sm-2">
+
+
+
+
+</div>
+<div class="col-sm-8">
+
+<p style="font-size:32px; font-weight:bold; margin-top:50px; margin-left:290px;">So, How Can I Help You?</p>
+
+
+
+</div>
+<div class="col-sm-2">
+
+<span></span>
+
+
+</div>
+</div>
+
+
+
+
+<div class="row" style="background:white">
+<div class="col-sm-4">
+
+
+
+
+</div>
+<div class="col-sm-4">
+
+<p style="color:red ;padding-left:75px">_________________________________________</p><br><br>
+
+
+
+
+</div>
+<div class="col-sm-4">
+<span></span>
+
+
+</div>
+</div>
+<div class="row" style="background:white">
+<div class="col-sm-5">
+
+
+
+
+</div>
+<div class="col-sm-2">
+<span class="border border-info">
+<button class="btn btn-default" style="border-color:orange; margin-bottom:25px"id="seee"> LETS TALK ABOUT YOUR PROJECT
+</button>
+</span>
+
+
+</div>
+<div class="col-sm-5">
+<span></span>
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="row" style="background-color:rgb(60, 60, 60); height:265px">
+
+
+<div class="col-sm-2">
+
+
+
+</div>
+<div class="col-sm-2">
+<h4 id="ff"> TECHVERX USA <br></h4>
+
+<p id="lp">
+
+Techverx LLC, 101 <br>
+Weatherstone <br>
+DR Unit A<br>
+Chapel Hill, NC <br>
+27514-1593</p>
+
+</div>
+<div class="col-sm-2">
+
+<h4 id="ff">TECHVERX HOUSE</h4>
+<p id="lp"> 335 R, Main Boulevard,<br>
+Johar Town, Phase II<br>
+Lahore, Pakistan<br>
+92 42 35956398<br></p>
+</div>
+<div class="col-sm-3">
+
+ <form>
+    <div class="input-group row" style="margin-top:40px; margin-left:45px ;width:260px;">
+      <span class="input-group-addon" style="background-color:white; color:rgb(255, 146, 71);"></i><i class="fa fa-user"></i></span>
+      <input id="email" type="text" class="form-control" name="email" placeholder="Name">
+    </div>
+	 <div class="input-group row" style="margin-top:10px;margin-left:45px;width:260px;">
+      <span class="input-group-addon" style="background-color:white;color:rgb(255, 146, 71);"><i class="glyphicon glyphicon-envelope"></i></span>
+      <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+    </div>
+
+  </form>
+<br>
+<button class="btn btn-default" style="border-color:orange; margin-left:45px;margin-bottom:25px; "id="bttn">	Subscribe	
+</button><br>
+
+<i class="fa fa-facebook" id="same" style="margin-left:140px;"></i>
+<i class="fa fa-twitter" id="same" style="margin-left:10px;"></i>
+<i class="fa fa-linkedin" id="same" style="margin-left:10px;"></i>
+<br><br>
+
+</div>
+
+<div class="col-sm-3">
+
+
+
+</div>
+</div>
+
+
+
+
+<div class="row" style="background:rgb(60,60,60);font-size:13px; height:60px; color:white">
+<div class="col-sm-5">
+</div>
+
+<p><span class="cp">
+Careers</span> | © 2017 Techverx.<span class="cp"> All Rights Reserved.</span></p><br>
+<div class="col-sm-7">
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
